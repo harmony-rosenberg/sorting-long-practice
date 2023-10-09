@@ -1,9 +1,21 @@
 function ageSort(users) {
-  // Your code here
+  users.sort((a, b) => Number(a.age) - Number(b.age))
+  return users
 }
 
+
 function oddEvenSort(arr) {
-  // Your code here
+
+  let evenNum = arr.filter((el) => el % 2 === 0)
+  let oddNum = arr.filter((el) => el % 2 !== 0)
+
+  evenNum.sort((a, b) => Number(a) - Number(b))
+  oddNum.sort((a, b) => Number(a) - Number(b))
+    // console.log(evenNum)
+    // console.log(oddNum)
+
+    return [...oddNum, ...evenNum]
+  // return oddNum.concat(evenNum) // alternative method
 }
 
 function validAnagrams(s, t) {
