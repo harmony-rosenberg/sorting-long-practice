@@ -67,13 +67,28 @@ function reverseBaseSort(arr) {
   return res.reverse()
 }
 
-function frequencySort(arr) {
+function frequencySort(arr) {//need to figure out how to print it out in correct order
+  let result=[]
   let sorted = {}
 
-  for(let i = 0; i < arr.length; i++) {
-    
+  for(let el of arr) {//create object
+    if(!sorted[el]) {//if the object does not have the el
+      sorted[el]=1//create a key:value pair
+    }else {
+      sorted[el]+=1;//if it already exists, incrememnt by 1
+    }
   }
-}
+  console.log(sorted)
+  for (key in sorted) {
+    let value=parseInt(key);//the numbers we want to repeat are keys so they need to be converted to numbers
+    let count=sorted[key]//grab how many times we are to repeat
+    result.push(...Array(count).fill(value))//create a new empty array with 'x' slots corresponding to count
+    //fill those empty slots with the value
+  }
+
+  return result
+  }
+
 
 module.exports = [
   oddEvenSort,
