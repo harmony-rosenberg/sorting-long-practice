@@ -78,7 +78,7 @@ function frequencySort(arr) {//need to figure out how to print it out in correct
       sorted[el]+=1;//if it already exists, incrememnt by 1
     }
   }
-  console.log(sorted)
+  // console.log(sorted)
   for (key in sorted) {
     let value=parseInt(key);//the numbers we want to repeat are keys so they need to be converted to numbers
     let count=sorted[key]//grab how many times we are to repeat
