@@ -43,7 +43,28 @@ function validAnagrams(s, t) {
 }
 
 function reverseBaseSort(arr) {
-  // Your code here
+  arr.sort((a , b) => b - a)
+  let res = []
+  let nums = {
+  }
+
+  for(let i = 0; i < arr.length; i ++) {
+    let length = arr[i].toString().length
+    if(!nums[length]) {
+      nums[length] = [arr[i]]
+    } else {
+      nums[length].push(arr[i])
+    }
+  }
+  let vals = [...Object.values(nums)]
+  for(let el of vals) {
+    el.reverse()
+    for(let i = el.length - 1; i >= 0; i--) {
+      res.push(el[i])
+    }
+  }
+  return res.reverse()
+
 }
 
 function frequencySort(arr) {

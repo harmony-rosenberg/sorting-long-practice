@@ -124,6 +124,11 @@ frequencySort(arr3);        // => [5, -1, 4, 4, -6, -6, 1, 1, 1]
 
 
 
-[starter]: https://github.com/appacademy/practice-for-week-06-custom-sorts-long-practice
+[starter]: https://github.com/appacademy/practiceGiven an array of integers, sort the array in increasing order based on the frequency of the values. If multiple values have the same frequency, sort them in decreasing order. Return the sorted array.
+
+Example:
+
+const arr1 = [1, 1, 2, 2, 2, 3];
+-for-week-06-custom-sorts-long-practice
 [Array.sort()]: https://developer.mozilla.org/en-US/docs/Web/JavaScript/Reference/Global_Objects/Array/sort# sorting-long-practice
 # sorting-long-practice
