@@ -56,6 +56,7 @@ function reverseBaseSort(arr) {
       nums[length].push(arr[i])
     }
   }
+
   let vals = [...Object.values(nums)]
   for(let el of vals) {
     el.reverse()
@@ -64,11 +65,14 @@ function reverseBaseSort(arr) {
     }
   }
   return res.reverse()
-
 }
 
 function frequencySort(arr) {
-  // Your code here
+  let sorted = {}
+
+  for(let i = 0; i < arr.length; i++) {
+    
+  }
 }
 
 module.exports = [
